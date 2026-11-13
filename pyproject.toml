@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "h2audit"
+version = "1.0.0"
+description = "RFC 9113 / RFC 7541 single-connection HTTP/2 header frame auditor"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "h2audit" }]
+dependencies = []
+
+[project.scripts]
+h2audit = "h2audit.__main__:main"
+
+[tool.setuptools]
+packages = ["h2audit"]
